@@ -1,4 +1,4 @@
-# recyclerView Example
+# RecyclerView Example
 
 ## A screenshot of the main screen: 
 ![](main_screen.jpeg)
