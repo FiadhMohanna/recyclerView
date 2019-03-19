@@ -33,16 +33,16 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.ItemViewHo
     @Override
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         //TODO 1: Create the View of the item
-        View itemView = LayoutInflater.from(context).inflate(R.layout.item, parent, false);
+        
         //TODO 2: Create a ViewHolder that will hold the item
-        return new ItemViewHolder(itemView);
+        
     }
 
     @Override
     public void onBindViewHolder(ItemViewHolder holder, int position) {
 
         //TODO: 3: Set the text of the TextView (bind the TextView to the data)
-        holder.itemText.setText(titles.get(position));
+        
 
         if (titles.size() > 3) {
             Random randomNumGenerator = new Random();
@@ -90,8 +90,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.ItemViewHo
         public ItemViewHolder(View itemView) {
             super(itemView);
             //TODO 4: Inflate the TextView and the frame
-            itemText = itemView.findViewById(R.id.item_text);
-            itemFrame = itemView.findViewById(R.id.item_frame);
+            
 
             //Set onClick listener on every item
             itemView.setOnClickListener(new View.OnClickListener() {
@@ -99,11 +98,7 @@ public class CommonAdapter extends RecyclerView.Adapter<CommonAdapter.ItemViewHo
                 public void onClick(View view) {
                     //TODO 5: Create an explicitly intent to open RoutineActivity and add extra to indicate which item was clicked
                     //If we are already in routine activity then the click on any item should do nothing (hint: check the size of the ArrayList to know in which Activity you're)
-                    if (titles.size() == 3 ) {
-                        Intent intent = new Intent(context, RoutineActivity.class);
-                        intent.putExtra("selected_item", getAdapterPosition());
-                        context.startActivity(intent);
-                    }
+                    
                 }
             });
         }
