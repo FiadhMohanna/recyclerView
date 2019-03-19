@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Routine Planner</string>
+    <string name="wakeup_routine">Wakeup</string>
+    <string name="breakfast_routine">Take your breakfast</string>
+    <string name="work_routine">Go to work</string>
+    <string name="launch_routine">Take your launch</string>
+    <string name="back_from_work_routine">Go back to home</string>
+    <string name="sleep_routine">Go to sleep</string>
+    <string name="dinner_routine">Take your dinner</string>
+    <string name="reading_routine">Read 2 pages from a book</string>
+    <string name="travel_routine">Discover a new city</string>
+    <string name="exercise_routine">Exercise</string>
+    <string name="photos_routine">Take Photos</string>
+    <string name="family_routine">Spend some time with family</string>
+    <string name="picnic_routine">Go for a picnic</string>
+
+
+
+</resources>
