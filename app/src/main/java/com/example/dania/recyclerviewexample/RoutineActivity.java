@@ -19,13 +19,13 @@ public class RoutineActivity extends AppCompatActivity {
         ArrayList<String> titles = new ArrayList<>();
 
         //TODO 6: Declare a RecyclerView
-        
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
 
         //TODO 7: Declare an object of the adapter
-        
+        CommonAdapter commonAdapter = new CommonAdapter(this, titles);
 
         //TODO 8: link the adapter to the RecyclerView
-        
+        recyclerView.setAdapter(commonAdapter);
 
         int clickedItemPosition = getIntent().getIntExtra("selected_item", 0);
 
@@ -54,10 +54,10 @@ public class RoutineActivity extends AppCompatActivity {
                 titles.add(getString(R.string.sleep_routine));
 
                 //TODO 9: Define a GridLayoutManager
-                
+                GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
 
                 //TODO 10: link the LayoutManager to the RecyclerView
-                
+                recyclerView.setLayoutManager(gridLayoutManager);
                 break;
 
             case 2:
