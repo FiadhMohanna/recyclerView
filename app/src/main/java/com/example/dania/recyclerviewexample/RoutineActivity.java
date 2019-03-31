@@ -21,6 +21,7 @@ public class RoutineActivity extends AppCompatActivity {
         //TODO 6: Declare a RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
 
+
         //TODO 7: Declare an object of the adapter
         CommonAdapter commonAdapter = new CommonAdapter(this, titles);
 
